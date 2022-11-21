@@ -65,6 +65,12 @@ export default {
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth!important;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
 .bg-royal-black {
   background-color: #232323!important;
 }

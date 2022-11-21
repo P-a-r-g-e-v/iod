@@ -7,19 +7,22 @@
         <div
           class="col-xl-4 col-md-5 text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0"
         >
-          <div data-aos="zoom-out"
+            <h2 class="pb-3 mb-1 mb-lg-3 text-white"
+              data-aos="fade-up"
               data-aos-offset="300"
               data-aos-delay="333"
               data-aos-duration="1050"
               data-aos-once="true">
-            <h2 class="pb-3 mb-1 mb-lg-3 text-white">
             Any questions? <br class="d-none d-md-inline text-white" />Check out
             the FAQs
             </h2>
-            <p class="fs-lg pb-3 mb-2 mb-lg-3  text-white">
+            <p class="fs-lg pb-3 mb-2 mb-lg-3  text-white" data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-delay="433"
+              data-aos-duration="1050"
+              data-aos-once="true">
               Still have unanswered questions and need to get in touch?
             </p>
-          </div>
           <div class="row row-cols-1 row-cols-sm-2 g-3 g-sm-4">
             <div class="col">
               <div class="card card-hover">
@@ -55,7 +58,8 @@
           </div>
         </div>
         <div class="col-md-7 offset-xl-1">
-            <h2 class="h1 pb-md-3 text-white" data-aos="zoom-in"
+            <h2 class="h1 pb-md-3 text-white"
+              data-aos="fade-up"
               data-aos-offset="300"
               data-aos-delay="333"
               data-aos-duration="1050"

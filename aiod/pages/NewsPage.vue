@@ -325,6 +325,13 @@ export default {
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth!important;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: #6366f1!important;
   background-color: rgba(0,0,0,0);

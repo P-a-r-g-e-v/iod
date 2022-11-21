@@ -190,6 +190,12 @@ export default {
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth!important;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
 
 .text-primary {
     color: #6366f1!important;

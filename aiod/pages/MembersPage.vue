@@ -2,7 +2,7 @@
 <template>
   <div>
     <!-- Page title-->
-    <section class="pt-6 pb-lg-6 pb-5 bg-repeat-0 bg-size-cover" style="background-image: url(assets/images/members-wrap.jpg);">
+    <section class="pt-6 pb-lg-6 pb-5 bg-repeat-0 bg-size-cover" style="background-image: url(assets/images/members-wrap.png);">
         <div class="container pt-lg-5 pb-lg-2">
           <div class="row">
             <div class="col-lg-6 col-md-8">
@@ -255,6 +255,13 @@ export default {
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth!important;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
 hr {
   content: '';
   margin-top: 0;

@@ -219,6 +219,11 @@ export default {
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth!important;
+  overflow-x: hidden;
+}
+
 .bg-glass {
   background: white;
   background: linear-gradient(

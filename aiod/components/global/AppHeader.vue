@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/attribute-hyphenation -->
 <template>
   <header
     class="header navbar navbar-expand-lg navbar-sticky navbar-floating"
@@ -35,9 +36,10 @@
               class="nav-link dropdown-toggle"
               href="#"
               data-bs-toggle="dropdown"
-              >About us</a
+              >About</a
             >
             <ul class="dropdown-menu">
+              <li><NuxtLink class="dropdown-item" to="/#about-us">About us</NuxtLink></li>
               <li><NuxtLink class="dropdown-item" to="/#">History</NuxtLink></li>
               <li><NuxtLink class="dropdown-item" to="#">Charter and Documents</NuxtLink></li>
               <li><NuxtLink class="dropdown-item" to="/#faq">FAQ</NuxtLink></li>
@@ -98,11 +100,11 @@
             >
             <ul class="dropdown-menu">
               <li>
-                <NuxtLink class="dropdown-item" to="/memberspage">Members</NuxtLink>
+                <NuxtLink class="dropdown-item" to="/memberspage" >Members</NuxtLink>
               </li>
               <li>
-                <NuxtLink class="dropdown-item" to="/memberspage#benefits"
-                  >Membership Benefits</NuxtLink
+                <a class="dropdown-item" href="/memberspage#benefits"
+                  >Membership Benefits</a
                 >
               </li>
               <li><a class="dropdown-item" href="">Join AIoD</a></li>
