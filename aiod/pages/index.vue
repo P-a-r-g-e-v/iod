@@ -16,7 +16,11 @@
       <div class="container pt-lg-3 py-sm-5 pb-lg-6">
         <h2
           class="h1 mb-lg-5 pb-md-3 text-center text-white"
-
+                  data-aos="fade-up"
+                  data-aos-offset="350"
+                  data-aos-delay="350"
+                  data-aos-duration="1050"
+                  data-aos-once="true"
         >
           The AIOD General Goals
         </h2>
@@ -24,7 +28,11 @@
           class="container"
 
         >
-          <div class="row g-0">
+          <div class="row g-0" data-aos="fade-up"
+                  data-aos-offset="350"
+                  data-aos-delay="450"
+                  data-aos-duration="1150"
+                  data-aos-once="true">
             <div class="col-md-3 col-sm-6 mb-md-0 mb-sm-grid-gutter mb-3 px-4">
               <div
                 class="text-center mx-auto mb-sm-0 mb-grid-gutter"
@@ -98,7 +106,7 @@
       <AppAboutUs />
     </section>
 
-    <!-- Core values -->
+    <!-- AIoD values -->
     <section
       class="bg-royal-grey bg-repeat-0"
       style="
@@ -110,13 +118,25 @@
         <div
 
         >
-          <h2 class="h1 text-center text-white">The AIoD values</h2>
-          <p class="mb-5 pb-3 fs-lg text-muted text-center">
+          <h2 class="h1 text-center text-white" data-aos="fade-down"
+                  data-aos-offset="450"
+                  data-aos-delay="450"
+                  data-aos-duration="1150"
+                  data-aos-once="true">The AIoD values</h2>
+          <p class="mb-5 pb-3 fs-lg text-muted text-center" data-aos="fade-down"
+                   data-aos-offset="350"
+                  data-aos-delay="350"
+                  data-aos-duration="1050"
+                  data-aos-once="true">
             Our values are the key to success.
           </p>
         </div>
         <div
-          class="row g-0 pb-lg-6 pb-sm-5 pb-4"
+          class="row g-0 pb-lg-6 pb-sm-5 pb-4" data-aos="fade-up"
+                   data-aos-offset="350"
+                  data-aos-delay="350"
+                  data-aos-duration="1050"
+                  data-aos-once="true"
 
         >
           <div class="col-sm-4 mb-sm-0 mb-4 pb-sm-0 pb-2">
@@ -168,6 +188,11 @@
         </div>
         <div
           class="row g-0 pb-lg-6 pb-sm-5 pb-4"
+                 data-aos="fade-up"
+                  data-aos-offset="350"
+                  data-aos-delay="450"
+                  data-aos-duration="1150"
+                  data-aos-once="true"
 
         >
           <div class="col-sm-4 mb-sm-0 mb-4 pb-sm-0 pb-2">
@@ -356,7 +381,7 @@
 
 <script>
 // import AppFaq from '~/components/global/AppFaq.vue'
-
+import AOS from 'aos'
 
 import AppFaqIt from '~/components/global/AppFaqIt.vue'
 import AppAboutUs from '~/components/global/AppAboutUs.vue'
@@ -396,7 +421,15 @@ export default {
       },
     }
   },
-
+  mounted() {
+    AOS.init({})
+    window.scroll({
+      top: 0,
+      left: 0,
+      right:0,
+      behavior: 'smooth',
+    })
+  },
 }
 </script>
 

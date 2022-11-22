@@ -43,8 +43,8 @@
               <h3 class="h5 mb-2 text-white">Events</h3>
               <p class="mb-0 fs-sm text-white">
                 Learn, share experience and connect with fellow directors and
-                leaders virtually and in-person at events hosted at IoD hubs
-                across the UK and beyond. Usually free to members.
+                leaders virtually and in-person at events hosted at AIoD hubs
+                across the Armenia and beyond. Usually free to members.
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@
               <p class="mb-0 fs-sm text-white">
                 Get unbiased, confidential advice on strategic and operational
                 challenges from our business, tax and legal experts as part of
-                our Information and Advisory Service. Free to full IoD members.
+                our Information and Advisory Service. Free to full AIoD members.
               </p>
             </div>
           </div>
@@ -91,7 +91,7 @@
             <div class="card-body px-lg-5 px-3">
               <h3 class="h5 mb-2 text-white">Influence</h3>
               <p class="mb-0 fs-sm text-white">
-                Be heard. The IoD is its members’ voice to UK government,
+                Be heard. The AIoD is its members’ voice to Armenian government,
                 influencing the debate, shaping the agenda and advocating change
                 through surveys and commissions. Free to members.
               </p>
@@ -109,7 +109,7 @@
               <h3 class="h5 mb-2 text-white">Insight</h3>
               <p class="mb-0 fs-sm text-white">
                 Get information to help you manage and grow your business, with
-                resources, guides and factsheets written by the IoD’s research
+                resources, guides and factsheets written by the AIoD’s research
                 team, based on real business queries. Free to members.
               </p>
             </div>

@@ -4,8 +4,8 @@
 <template>
   <!-- Pricing -->
   <section>
-    <div class="container">
-      <h2 class="h1">That’s how we do it</h2>
+    <div class="container py-lg-4">
+      <h2 class="h1 text-white">Why Join Us?</h2>
     </div>
 
     <!-- Carousel -->
@@ -43,11 +43,7 @@
               <span class="step-line"></span>
             </div>
             <div class="step-body">
-              <h3 class="h5 mb-2">Work Estimate</h3>
-              <p class="mb-0 text-muted">
-                Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam
-                velit nostrud aliquip sunt.
-              </p>
+              <h3 class="h5 mb-2 text-white">Join the directors and leaders in the Armenia and beyond <i class="ci-arrow-right"></i></h3>
             </div>
           </div>
 
@@ -58,11 +54,7 @@
               <span class="step-line"></span>
             </div>
             <div class="step-body">
-              <h3 class="h5 mb-2">Contract</h3>
-              <p class="mb-0 text-muted">
-                Anim reprehenderit sint voluptate exercitation adipisicing
-                laborum adipisicing. Minim ad tempor.
-              </p>
+              <h3 class="h5 mb-2 text-white">Whether you’re the founder of a start-up, the director of a business <i class="ci-arrow-right"></i></h3>
             </div>
           </div>
 
@@ -73,11 +65,7 @@
               <span class="step-line"></span>
             </div>
             <div class="step-body">
-              <h3 class="h5 mb-2">Mobilization</h3>
-              <p class="mb-0 text-muted">
-                Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit
-                voluptate ullamco proident ea ad.
-              </p>
+              <h3 class="h5 mb-2 text-white">The AIoD is the place to connect <i class="ci-arrow-right"></i></h3>
             </div>
           </div>
 
@@ -87,11 +75,7 @@
               <span class="step-indicator">04</span>
             </div>
             <div class="step-body">
-              <h3 class="h5 mb-2">Construction Work</h3>
-              <p class="mb-0 text-muted">
-                Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore
-                dolore et ad et veniamad.
-              </p>
+              <h3 class="h5 mb-2 text-white">Share knowledge and develop professionally.</h3>
             </div>
           </div>
         </tiny-slider>
@@ -172,7 +156,7 @@
               </div>
               <div class="card-body pt-0">
                 <div
-                  class="display-4 d-flex justify-content-center mb-3 py-2 px-4 text-primary"
+                  class="display-4 d-flex justify-content-center mb-3 py-2 px-4 text-purple"
                 >
                   $
                   <span
@@ -186,23 +170,23 @@
                 <hr class="hr-gradient mx-n4 mb-4" />
                 <ul class="list-unstyled d-table mx-auto mb-0 pb-2">
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Advanced Analytics</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Change Management</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Corporate Finance</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
-                    <span>One Way Link Building</span>
+                    <i class="ci-checkmark text-purple me-2"></i>
+                    <span>Private Section</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Social Media Marketing</span>
                   </li>
                   <li class="d-flex align-items-center mb-2 opacity-90">
@@ -263,7 +247,7 @@
                   </li>
                   <li class="d-flex align-items-center mb-2">
                     <i class="ci-checkmark text-success me-2"></i>
-                    <span class="text-white">One Way Link Building</span>
+                    <span class="text-white">Private Section</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
                     <i class="ci-checkmark text-success me-2"></i>
@@ -300,7 +284,7 @@
               </div>
               <div class="card-body pt-0">
                 <div
-                  class="display-4 d-flex justify-content-center mb-3 py-2 px-4 text-primary"
+                  class="display-4 d-flex justify-content-center mb-3 py-2 px-4 text-purple"
                 >
                   $
                   <span
@@ -314,31 +298,31 @@
                 <hr class="hr-gradient mx-n4 mb-4" />
                 <ul class="list-unstyled d-table mx-auto mb-0 pb-2">
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Advanced Analytics</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Change Management</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Corporate Finance</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
-                    <span>One Way Link Building</span>
+                    <i class="ci-checkmark text-purple me-2"></i>
+                    <span>Private Section</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Social Media Marketing</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Strategy & Marketing</span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ci-checkmark text-primary me-2"></i>
+                    <i class="ci-checkmark text-purple me-2"></i>
                     <span>Information Technology</span>
                   </li>
                 </ul>
@@ -391,7 +375,39 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+@media screen and (max-width: 575.98px) {
+  .step .step-indicator {
+  color: #6366f1!important;
+}
+}
 
+
+.step .step-indicator::before {
+  width: 5.25rem;
+  height: 5.25rem;
+  background-color: rgba(99,102,241, 0.12)!important;
+  transition: transform .3s ease-in-out,opacity .3s ease-in-out;
+  transition-duration: 0.3s, 0.3s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+  transition-property: transform, opacity;
+}
+
+.step .step-indicator::after {
+  width: 7.3125rem;
+  height: 7.3125rem;
+  background-color: rgba(99,102,241, 0.06)!important;
+  transition: transform .3s ease .1s,opacity .3s ease .1s;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0.1s, 0.1s;
+    transition-property: transform, opacity;
+}
+
+.step:hover .step-indicator {
+  color: #6366f1!important;
+  transition: 0.3s ease-in-out!important;
+}
 
 </style>

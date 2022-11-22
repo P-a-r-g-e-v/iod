@@ -17,17 +17,32 @@
             <div class="card-body wrap-card-bg scroll-body">
               <h2
                 class="text-white fw-lighter text-center from-start"
+                  data-aos="fade-up"
+                  data-aos-offset="350"
+                  data-aos-delay="350"
+                  data-aos-duration="1050"
+                  data-aos-once="true"
               >
                 About us
               </h2>
               <h5
                 class="text-white fw-lighter lh text-center from-start"
+                  data-aos="fade-up"
+                  data-aos-offset="350"
+                  data-aos-delay="450"
+                  data-aos-duration="1150"
+                  data-aos-once="true"
               >
                 The Armenian Institute of Directors (AIoD) was founded in the
                 last quarter of 2014, with advisory assistance of the
                 International Finance Corporation. <br />
                 <h5
                   class="pt-4 text-white fw-lighter lh text-center from-start"
+                    data-aos="fade-up"
+                    data-aos-offset="350"
+                    data-aos-delay="550"
+                    data-aos-duration="1250"
+                    data-aos-once="true"
                 >
                   The AIoD is a non-governmental organization, with the mission
                   to promote the role of an effective director. The institute
@@ -64,6 +79,11 @@ export default {
 </script>
 
 <style scoped>
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
 @media screen and (max-width: 700px) {
   .scroll-body {
     display: flexbox;

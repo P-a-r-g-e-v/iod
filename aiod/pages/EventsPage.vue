@@ -4,7 +4,7 @@
       <!-- Page title-->
     <section
       class="pt-6 pb-lg-6 pb-5 bg-repeat-0 bg-size-cover"
-      style="background-image: url(assets/images/events0.jpg)"
+      style="background-image: url(assets/images/events00.png)"
     >
       <div class="container py-lg-5">
         <div class="row">

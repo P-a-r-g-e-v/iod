@@ -178,6 +178,10 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+html, body {
+  scroll-behavior: smooth!important;
+}
+
 @media only screen and (min-width: 700px) {
   .join-btn {
     margin-left: 38.5rem!important;
