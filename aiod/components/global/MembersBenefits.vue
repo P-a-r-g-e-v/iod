@@ -2,11 +2,14 @@
 <template>
   <!-- Benefits -->
   <section id="benefits" class="bg-royal-black">
+    <div class="container d-flex text-center">
+
+    </div>
     <div class="container pt-lg-6 pt-5 pb-4">
       <h2 class="h1 mb-md-5 pb-2 text-center text-white"
             data-aos="fade-down"
             data-aos-offset="300"
-            data-aos-delay="330"
+            data-aos-delay="250"
             data-aos-duration="1050"
             data-aos-once="true">Our benefits</h2>
       <div class="row justify-content-center">
@@ -16,7 +19,7 @@
           <div
             class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center"
             data-aos="fade-up"
-            data-aos-offset="330"
+            data-aos-offset="350"
             data-aos-delay="350"
             data-aos-duration="1050"
             data-aos-once="true"
@@ -34,8 +37,8 @@
           <div
             class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center"
             data-aos="fade-up"
-            data-aos-offset="360"
-            data-aos-delay="650"
+            data-aos-offset="375"
+            data-aos-delay="400"
             data-aos-duration="1100"
             data-aos-once="true"
           >
@@ -51,8 +54,8 @@
           <div
             class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center"
             data-aos="fade-up"
-            data-aos-offset="390"
-            data-aos-delay="950"
+            data-aos-offset="400"
+            data-aos-delay="550"
             data-aos-duration="1150"
             data-aos-once="true"
           >
@@ -83,7 +86,7 @@
           <div
             class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center"
             data-aos="fade-up"
-            data-aos-offset="330"
+            data-aos-offset="350"
             data-aos-delay="350"
             data-aos-duration="1050"
             data-aos-once="true"
@@ -100,8 +103,8 @@
           <div
             class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center"
             data-aos="fade-up"
-            data-aos-offset="360"
-            data-aos-delay="650"
+            data-aos-offset="375"
+            data-aos-delay="400"
             data-aos-duration="1100"
             data-aos-once="true"
           >
@@ -117,8 +120,8 @@
           <div
             class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center"
             data-aos="fade-up"
-            data-aos-offset="390"
-            data-aos-delay="950"
+            data-aos-offset="400"
+            data-aos-delay="450"
             data-aos-duration="1150"
             data-aos-once="true"
           >
@@ -171,4 +174,51 @@ export default {
     0 0.5rem 0.625rem rgba(99, 102, 241, text-white 0.08),
     0 0.25rem 0.25rem rgba(30, 33, 44, 0.06) !important;
 }
+
+
+
+.join-button {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 12px 18px;
+  position: relative;
+}
+
+.join-button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+  translateX(calc(100% + 4px));
+  width: 45px;
+  height: 45px;
+  background: #6366f1;
+  border-radius: 50px;
+  transition: transform 0.25s 0.25s cubic-bazier(0, 0, 0.5, 2), width
+  0.25s cubic-bazier(0, 0, 0.5, 2);
+  z-index: 2;
+}
+
+.join-button:hover::before {
+  width: 100%;
+  transform: translateY(-50%)
+  translateX(-18px);
+  transition: transform 0.25s
+  cubic-bazier(0, 0, 0.5, 2) width
+  0.25s 0.25s cubic-bazier(0, 0, 0.5, 2);
+}
+
+.join-button i {
+  margin-left: 5px;
+  transition: transform 0.25s 0.4s
+  cubic-bazier(0, 0, 0.5, 2);
+}
+
+.join-button:hover i {
+  transform: translateX(3px);
+}
+
 </style>

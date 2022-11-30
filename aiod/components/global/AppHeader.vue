@@ -39,8 +39,8 @@
               >About</a
             >
             <ul class="dropdown-menu">
+              <li><NuxtLink class="dropdown-item" to="/#history">History</NuxtLink></li>
               <li><NuxtLink class="dropdown-item" to="/#about-us">About us</NuxtLink></li>
-              <li><NuxtLink class="dropdown-item" to="/#">History</NuxtLink></li>
               <li><NuxtLink class="dropdown-item" to="#">Charter and Documents</NuxtLink></li>
               <li><NuxtLink class="dropdown-item" to="/#faq">FAQ</NuxtLink></li>
               <li><NuxtLink class="dropdown-item" to="/#contacts">Contacts</NuxtLink></li>
@@ -107,7 +107,7 @@
                   >Membership Benefits</a
                 >
               </li>
-              <li><a class="dropdown-item" href="">Join AIoD</a></li>
+              <li><NuxtLink class="dropdown-item" to="/memberspage#join-us">Join AIoD</NuxtLink></li>
               <li><a class="dropdown-item" href="">Opportunities</a></li>
             </ul>
           </li>

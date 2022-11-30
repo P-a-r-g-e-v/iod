@@ -11,14 +11,14 @@
             <div
               class="d-sm-flex align-items-center justify-content-between mb-4"
             >
-              <a class="d-inline-block" href="/">
+              <NuxtLink class="d-inline-block" to="/">
                 <img
                   style="filter: saturate(200%);"
                   src="/assets/images/logo-footer.png"
                   width="120"
                   alt="Createx logo"
                 />
-              </a>
+              </NuxtLink>
               <div class="mt-sm-1 mt-4 pe-sm-4">
                 <a href="/#" class="btn-social ci-whatsapp-a">
                   <i class="ci-whatsapp"></i>

@@ -303,23 +303,45 @@ export default {
     }
   },
   mounted() {
-    const container = document.querySelector('[data-filter-grid]');
-    this.mixer = mixitup(container, {
-        selectors: {
-            target: ".grid-item"
-        },
-        controls: {
-            scope: "local"
-        },
-        classNames: {
-            block: "",
-            elementFilter: "",
-            modifierActive: "active"
-        },
-        animation: {
-            duration: 350
-        }
-    });
+    setTimeout(() => {
+      const container = document.querySelector('[data-filter-grid]');
+      this.mixer = mixitup(container, {
+          selectors: {
+              target: ".grid-item"
+          },
+          controls: {
+              scope: "local"
+          },
+          classNames: {
+              block: "",
+              elementFilter: "",
+              modifierActive: "active"
+          },
+          animation: {
+              duration: 350
+          }
+      });
+    }, 1000);
+  },
+  methods: {
+    async getCategories() {
+      try {
+        const results = await this.$strapi.find('categories', {
+          populate: ['*']
+        })
+        this.categories = results;
+      } catch (error) {
+      }
+    },
+    async getEvents() {
+      try {
+        const results = await this.$strapi.find('news', {
+          populate: ['*']
+        })
+        this.events = results;
+      } catch (error) {
+      }
+    },
   }
 }
 </script>

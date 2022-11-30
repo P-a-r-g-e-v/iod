@@ -1,9 +1,10 @@
+<!-- eslint-disable vue/v-on-style -->
 <!-- eslint-disable vue/attribute-hyphenation -->
 <!-- eslint-disable vue/attributes-order -->
 <!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
   <!-- Pricing -->
-  <section>
+  <section id="join-us">
     <div class="container py-lg-4">
       <h2 class="h1 text-white">Why Join Us?</h2>
     </div>
@@ -31,10 +32,10 @@
                 }
               }
             }'
-          :loop='false'
-          :controls='false'
+          :loop="false"
+          :controls="false"
           :responsive="responsive_plans"
-          :mouseDrag='true'
+          :mouseDrag="true"
         >
           <!-- Horizontal step item -->
           <div class="step pt-2 px-3">
@@ -43,7 +44,10 @@
               <span class="step-line"></span>
             </div>
             <div class="step-body">
-              <h3 class="h5 mb-2 text-white">Join the directors and leaders in the Armenia and beyond <i class="ci-arrow-right"></i></h3>
+              <h3 class="h5 mb-2 text-white">
+                Join the directors and leaders in the Armenia and beyond
+                <i class="ci-arrow-right"></i>
+              </h3>
             </div>
           </div>
 
@@ -54,7 +58,10 @@
               <span class="step-line"></span>
             </div>
             <div class="step-body">
-              <h3 class="h5 mb-2 text-white">Whether you’re the founder of a start-up, the director of a business <i class="ci-arrow-right"></i></h3>
+              <h3 class="h5 mb-2 text-white">
+                Whether you’re the founder of a start-up, the director of a
+                business <i class="ci-arrow-right"></i>
+              </h3>
             </div>
           </div>
 
@@ -65,7 +72,9 @@
               <span class="step-line"></span>
             </div>
             <div class="step-body">
-              <h3 class="h5 mb-2 text-white">The AIoD is the place to connect <i class="ci-arrow-right"></i></h3>
+              <h3 class="h5 mb-2 text-white">
+                The AIoD is the place to connect <i class="ci-arrow-right"></i>
+              </h3>
             </div>
           </div>
 
@@ -75,14 +84,24 @@
               <span class="step-indicator">04</span>
             </div>
             <div class="step-body">
-              <h3 class="h5 mb-2 text-white">Share knowledge and develop professionally.</h3>
+              <h3 class="h5 mb-2 text-white">
+                Share knowledge and develop professionally.
+              </h3>
             </div>
           </div>
         </tiny-slider>
       </div>
     </div>
-
-    <div class="container mt-md-4 pt-lg-6 pt-5 pb-4">
+    <div class="container mt-md-2 pt-lg-3 pt-3 pb-2 d-flex justify-content-center">
+      <div class="row">
+       <div class="col-12 rainbow d-flex text-center">
+        <NuxtLink :to="loggedInUser ? '/user/me' : '/user/login'" class="btn btn-translucent-primary btn-hover-shadow btn-lg my-auto ">
+          Join AIoD <i class="ci-arrow-right"></i>
+        </NuxtLink>
+       </div>
+      </div>
+    </div>
+    <div class="container pt-lg-5 pt-5 pb-4">
       <h2
         class="h1 mb-md-5 pb-2 text-center text-white"
         data-aos="zoom-out"
@@ -100,6 +119,7 @@
         <div class="mx-auto mb-md-5 mb-4 pb-2" style="max-width: 390px">
           <div class="switch">
             <input
+              v-on:click="switchAlt"
               class="switch-input visually-hidden"
               type="checkbox"
               id="switchAlt"
@@ -341,6 +361,7 @@
 <script>
 export default {
   name: 'JoinAIOD',
+
   data() {
     return {
       responsive_options: {
@@ -372,22 +393,38 @@ export default {
       },
     }
   },
+
+//   methods: {
+//     switchAlt: {
+
+//   }
+// }
+
 }
 </script>
 
 <style scoped>
 @media screen and (max-width: 575.98px) {
   .step .step-indicator {
-  color: #6366f1!important;
-}
+    color: #6366f1 !important;
+  }
 }
 
 
+body {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 height: 100vh;
+}
+ *, *::before, *::after {
+	 box-sizing: border-box;
+}
 .step .step-indicator::before {
   width: 5.25rem;
   height: 5.25rem;
-  background-color: rgba(99,102,241, 0.12)!important;
-  transition: transform .3s ease-in-out,opacity .3s ease-in-out;
+  background-color: rgba(99, 102, 241, 0.12) !important;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transition-duration: 0.3s, 0.3s;
   transition-timing-function: ease-in-out, ease-in-out;
   transition-delay: 0s, 0s;
@@ -397,17 +434,71 @@ export default {
 .step .step-indicator::after {
   width: 7.3125rem;
   height: 7.3125rem;
-  background-color: rgba(99,102,241, 0.06)!important;
-  transition: transform .3s ease .1s,opacity .3s ease .1s;
-    transition-duration: 0.3s, 0.3s;
-    transition-timing-function: ease, ease;
-    transition-delay: 0.1s, 0.1s;
-    transition-property: transform, opacity;
+  background-color: rgba(99, 102, 241, 0.06) !important;
+  transition: transform 0.3s ease 0.1s, opacity 0.3s ease 0.1s;
+  transition-duration: 0.3s, 0.3s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0.1s, 0.1s;
+  transition-property: transform, opacity;
 }
 
 .step:hover .step-indicator {
-  color: #6366f1!important;
-  transition: 0.3s ease-in-out!important;
+  color: #6366f1 !important;
+  transition: 0.3s ease-in-out !important;
 }
+
+.btn-translucent-primary:hover {
+  color: white!important;
+}
+
+/* button box animation */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+@keyframes rotate {
+	 100% {
+		 transform: rotate(1turn);
+	}
+}
+ .rainbow {
+	 position: relative;
+	 z-index: 0;
+	 width: 248px;
+	 height: 140px;
+	 border-radius: 10px;
+	 overflow: hidden;
+	 padding: 2rem;
+}
+ .rainbow::before {
+	 content: '';
+	 position: absolute;
+	 z-index: -2;
+	 left: -50%;
+	 top: -50%;
+	 width: 200%;
+	 height: 200%;
+	 background-color: #6366f1;
+	 background-repeat: no-repeat;
+	 background-size: 50% 50%, 50% 50%;
+	 background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+	 background-image: linear-gradient(#6366f1, #6366f1), linear-gradient(#414ED4, #414ED4), linear-gradient(#0D37B8, #0D37B8), linear-gradient(#00229C, #00229C);
+	 animation: rotate 6s linear infinite;
+}
+ .rainbow::after {
+	 content: '';
+	 position: absolute;
+	 z-index: -1;
+	 left: 6px;
+	 top: 6px;
+	 width: calc(100% - 12px);
+	 height: calc(100% - 12px);
+	 background: #242424;
+	 border-radius: 5px;
+}
+
+
+/* button box animation */
 
 </style>

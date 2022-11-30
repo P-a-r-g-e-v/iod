@@ -312,10 +312,6 @@ export default {
   color: #fff;
 }
 
-/* .green-icon {
-  filter: invert(66%) sepia(48%) saturate(364%) hue-rotate(105deg) brightness(90%) contrast(96%);
-} */
-
 .media-tabs .nav-link.active img[src*='.svg'].media-tabs-icon {
   filter: brightness(0) invert(1);
 }
@@ -346,24 +342,24 @@ export default {
   will-change: transform;
 }
 .portfolio-card-slide:hover .portfolio-card-body {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .portfolio-card-slide:hover {
-    text-decoration: none;
-    box-shadow: 0 1.75rem 1.875rem rgb(99 102 241 / 16%), 0 1.25rem 1rem -0.25rem rgb(99 102 241 / 10%), 0 0.5rem 0.625rem rgb(99 102 241 / 8%), 0 0.25rem 0.25rem rgb(30 33 44 / 5%);
+  text-decoration: none;
+  box-shadow: 0 1.75rem 1.875rem rgb(99 102 241 / 16%), 0 1.25rem 1rem -0.25rem rgb(99 102 241 / 10%), 0 0.5rem 0.625rem rgb(99 102 241 / 8%), 0 0.25rem 0.25rem rgb(30 33 44 / 5%);
 }
 .portfolio-card-slide {
-    display: block;
-    position: relative;
-    text-decoration: none;
-    transition: box-shadow .25s ease-in-out;
-    transition-property: box-shadow;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-    overflow: hidden;
-    box-shadow: 0 1.75rem 1.875rem rgb(99 102 241 / 8%), 0 1.25rem 1rem rgb(99 102 241 / 5%), 0 0.5rem 0.625rem rgb(99 102 241 / 4%), 0 0.25rem 0.25rem rgb(30 33 44 / 3%);
+  display: block;
+  position: relative;
+  text-decoration: none;
+  transition: box-shadow .25s ease-in-out;
+  transition-property: box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  overflow: hidden;
+  box-shadow: 0 1.75rem 1.875rem rgb(99 102 241 / 8%), 0 1.25rem 1rem rgb(99 102 241 / 5%), 0 0.5rem 0.625rem rgb(99 102 241 / 4%), 0 0.25rem 0.25rem rgb(30 33 44 / 3%);
 }
 
 .text-muted {

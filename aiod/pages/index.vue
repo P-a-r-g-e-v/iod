@@ -18,7 +18,7 @@
           class="h1 mb-lg-5 pb-md-3 text-center text-white"
                   data-aos="fade-up"
                   data-aos-offset="350"
-                  data-aos-delay="350"
+                  data-aos-delay="250"
                   data-aos-duration="1050"
                   data-aos-once="true"
         >
@@ -120,7 +120,7 @@
         >
           <h2 class="h1 text-center text-white" data-aos="fade-down"
                   data-aos-offset="450"
-                  data-aos-delay="450"
+                  data-aos-delay="350"
                   data-aos-duration="1150"
                   data-aos-once="true">The AIoD values</h2>
           <p class="mb-5 pb-3 fs-lg text-muted text-center" data-aos="fade-down"
@@ -134,7 +134,7 @@
         <div
           class="row g-0 pb-lg-6 pb-sm-5 pb-4" data-aos="fade-up"
                    data-aos-offset="350"
-                  data-aos-delay="350"
+                  data-aos-delay="250"
                   data-aos-duration="1050"
                   data-aos-once="true"
 

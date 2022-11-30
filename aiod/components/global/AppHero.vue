@@ -3,7 +3,7 @@
 <!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
   <!-- Hero slider -->
-  <section id="overview" class="tns-carousel-wrapper tns-controls-outer tns-controls-outer-custom">
+  <section id="history" class="tns-carousel-wrapper tns-controls-outer tns-controls-outer-custom">
     <tiny-slider
       class="tns-carousel-inner"
       data-carousel-options='{
@@ -40,14 +40,11 @@
         "
       >
         <div class="container pt-5 pb-6 bg-glass">
-          <div class="row pb-lg-6">
-            <div class="col offset-lg-1 offset-xl-0 pb-4 pb-md-6 text-center">
-              <h2 class="display-4 mb-lg-5 pb-3 from-start text-hero">The Armenian Institute of Directors (AIoD) was founded in the last
+          <div class="row pt-lg-4">
+            <div class="col offset-lg-1 offset-xl-0 pt-4 pt-md-6 text-center">
+              <h2 class="display-4 mt-lg-5 pt-3 from-start text-hero">The Armenian Institute of Directors (AIoD) was founded in the last
                 quarter of 2014, with advisory assistance of the International Finance Corporation.
               </h2>
-              <div class="mb-4 scale-up delay-2">
-                <img class="animation" src="/assets/images/last.png" alt="" style="width: 22%;">
-              </div>
             </div>
           </div>
         </div>
@@ -62,15 +59,12 @@
         "
       >
         <div class="container pt-5 pb-6 bg-glass">
-          <div class="row pb-lg-6">
-            <div class="offset-lg-1 offset-xl-0 pb-4 pb-md-6 text-center">
-              <h2 class="display-4 mb-lg-5 pb-3 scale-down text-hero">
+          <div class="row pt-lg-4">
+            <div class="offset-lg-1 offset-xl-0 pt-4 pt-md-6 text-center">
+              <h2 class="display-4 mt-lg-5 pt-3 scale-down text-hero">
                 The AIoD is a non-governmental organization, with the mission to promote the role of an effective director.
                 We share knowledge and develop professionally.
               </h2>
-              <div class="mb-4 scale-down delay-2">
-                <img class="animation" src="/assets/images/last.png" alt="" style="width: 22%;">
-              </div>
             </div>
           </div>
         </div>
@@ -85,14 +79,11 @@
         "
       >
         <div class="container pt-5 pb-6 bg-glass">
-          <div class="row pb-lg-6">
-            <div class="offset-lg-1 offset-xl-0 pb-4 pb-md-6 text-center">
-              <h2 class="display-4 mb-lg-5 pb-3 from-start text-hero">The institute undertakes the role of the “intellectual leader” in the field of
+          <div class="row pt-lg-4">
+            <div class="offset-lg-1 offset-xl-0 pt-4 pt-md-6 text-center">
+              <h2 class="display-4 mt-lg-5 pt-3 from-start text-hero">The institute undertakes the role of the “intellectual leader” in the field of
                 effective corporate governance that will serve for economic development and welfare of our society.
               </h2>
-              <div class="mb-4 scale-up delay-2">
-                <img class="animation" src="/assets/images/last.png" alt="" style="width: 22%;">
-              </div>
             </div>
           </div>
         </div>
@@ -107,17 +98,14 @@
         "
       >
         <div class="container pt-5 pb-6 bg-glass">
-          <div class="row pb-lg-6">
-            <div class="offset-lg-1 offset-xl-0 pb-4 pb-md-6 text-center">
-              <h2 class="display-4 mb-lg-5 pb-3 scale-down text-hero">If you are already a successful director looking to
+          <div class="row pt-lg-4">
+            <div class="offset-lg-1 offset-xl-0 pb-4 pt-md-6 text-center">
+              <h2 class="display-4 mt-lg-5 pt-3 scale-down text-hero">If you are already a successful director looking to
                 take your career to the next level, our world-class
                 professional development, designed by directors,
                 will help you accelerate your career and make you
                 more effective.
               </h2>
-              <div class="mb-4 scale-down delay-2">
-                <img class="animation" src="/assets/images/last.png" alt="" style="width: 22%;">
-              </div>
             </div>
           </div>
         </div>
@@ -138,10 +126,11 @@
               <button type="button" data-nav="2">03</button>
               <button type="button" data-nav="3">04</button>
               <NuxtLink
-                :to="loggedInUser ? '/user/me' : '/user/login'"
+                to="/memberspage#join-us"
                 class="btn btn-arrow join-btn"
+                id="purple"
                 >Join us <i class="ci-arrow-right"></i>
-                </NuxtLink>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -219,10 +208,6 @@ html, body {
   color: rgba(255, 255, 255, 0.65)!important;
 }
 
-.delay-2 {
-  transition-delay: 1s !important;
-}
-
 h3 {
   font-size: 1.438rem!important;
 }
@@ -230,22 +215,18 @@ h3 {
 .text-hero {
   color: whitesmoke!important;
   font-weight: 400!important;
-  font-size: 2.188rem;
+  font-size: 2.688rem;
   font-family: 'Questrial', sans-serif;
   line-height: 135%;
 }
 
-.animation {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.6;
-  transition: 0.13s ease-out;
+#purple {
+  color:#6366f1!important
 }
-.animation:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-  opacity: 1;
-  filter: saturate(130%);
-  transition: 0.13s linear;
+
+
+#purple.btn.btn-arrow.join-btn::before {
+  background-color: transparent!important;
 }
+
 </style>

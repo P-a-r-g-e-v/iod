@@ -65,7 +65,7 @@
                   />
                 </div>
                 <span class="card-text text-center text-purple">FEAS</span>
-                <h5 class="card-title mb-1">Courtney Alexander</h5>
+                <h5 class="card-title mb-1"><a href="/memberinfo" class="stretched-link member-link">Courtney Alexander</a></h5>
                 <hr />
               </div>
             </div>
@@ -230,7 +230,7 @@
         <p class="mb-5 fs-lg text-center text-white">
           You can join the IoD as an individual or as part of a whole board
           membership.
-          <a href="#">Join us</a>
+          <NuxtLink :to="loggedInUser ? '/user/me' : '/user/login'">Join us</NuxtLink>
         </p>
       </div>
       <!-- Benefits -->
@@ -290,6 +290,11 @@ a:hover {
   transition-delay: 0s, 0s;
   transition-property: border-color, box-shadow;
   box-shadow:0 0.75rem 0.875rem rgba(255, 255, 255, 0.16),0 1.25rem 1rem rgba(255, 255, 255, 0.1),0 .5rem .625rem rgba(255, 255, 255, 0.08),0 .25rem .25rem rgba(30,33,44,.06) !important;
+}
+
+a.member-link {
+  color:#6366f1!important;
+  text-decoration: none;
 }
 
 </style>

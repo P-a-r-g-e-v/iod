@@ -29,7 +29,7 @@
         </div>
         <div class="mb-4">
           <label class="form-label-lg text-white" for="password">Password</label>
-            <input class="form-control text-white" type="password" v-model="password" id="password" placeholder="******">
+            <input class="form-control" type="password" v-model="password" id="password" placeholder="******">
         </div>
         <div class="d-flex justify-content-between align-items-center mb-4">
           <NuxtLink to="/user/reset" class="fs-sm text-decoration-none l-reset">Reset password?</NuxtLink>

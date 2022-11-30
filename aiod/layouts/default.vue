@@ -224,4 +224,5 @@ html {
   border-bottom-color: #6366f1 !important;
   border-left-color: #6366f1 !important;
 }
+
 </style>

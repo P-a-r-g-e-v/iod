@@ -19,7 +19,7 @@
                 class="text-white fw-lighter text-center from-start"
                   data-aos="fade-up"
                   data-aos-offset="350"
-                  data-aos-delay="350"
+                  data-aos-delay="250"
                   data-aos-duration="1050"
                   data-aos-once="true"
               >
@@ -29,7 +29,7 @@
                 class="text-white fw-lighter lh text-center from-start"
                   data-aos="fade-up"
                   data-aos-offset="350"
-                  data-aos-delay="450"
+                  data-aos-delay="350"
                   data-aos-duration="1150"
                   data-aos-once="true"
               >
@@ -40,7 +40,7 @@
                   class="pt-4 text-white fw-lighter lh text-center from-start"
                     data-aos="fade-up"
                     data-aos-offset="350"
-                    data-aos-delay="550"
+                    data-aos-delay="450"
                     data-aos-duration="1250"
                     data-aos-once="true"
                 >
@@ -118,11 +118,11 @@ body {
   height: inherit;
   background-color: rgba(255, 255, 255, 0.03);
   scroll-behavior: smooth;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(0.35rem);
 }
 
 .wrap-card-bg {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 0.6rem;
 }
 

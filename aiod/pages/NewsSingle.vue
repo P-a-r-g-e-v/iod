@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Page title-->
-      <section class="mb-lg-0 mb-5 pt-6 pb-lg-6 pb-5 bg-news">
+      <section class="mb-lg-0 mb-5 pt-6 pb-lg-6 pb-5">
         <div class="container py-lg-5">
 
           <!-- Breadcrumbs -->
@@ -37,12 +37,19 @@
               </li>
             </ul>
             <div class="d-sm-block d-none ms-sm-4">
-              <a href="#" class="btn-social ci-facebook-a">
-                <i class="ci-facebook"></i>
-              </a>
-              <a href="#" class="btn-social ci-linkedin-a">
-                <i class="ci-linkedin"></i>
-              </a>
+              <a
+                  href="https://www.facebook.com/ArmenianInstituteofDirectors"
+                  target="_blank"
+                  class="btn-social ci-facebook-a"
+                >
+                  <i class="ci-facebook"></i>
+                </a>
+                <a
+                  href="https://am.linkedin.com/company/armenian-institute-of-directors#:~:text=The%20AIoD%20is%20a%20non,and%20welfare%20of%20Armenian%20society."
+                  target="_blank"
+                  class="btn-social ci-linkedin-a">
+                  <i class="ci-linkedin"></i>
+                </a>
               <a href="#" class="btn-social ci-twitter-a">
                 <i class="ci-twitter"></i>
               </a>
@@ -87,8 +94,8 @@
 
 
       <!-- Recent news -->
-      <section class="py-lg-6 py-5 bg-dark">
-        <div class="container">
+      <section class="py-lg-5 py-5 bg-dark">
+        <div class="container py-3 bg-glass">
           <h2 class="h1 mb-5 pb-md-3 text-center text-white">Recent news</h2>
           <div class="row">
             <div class="col-lg-7 col-md-6 mb-md-0 mb-grid-gutter">
@@ -218,7 +225,14 @@ h1 .nav-link:hover, .h1 .nav-link:hover, h2 .nav-link:hover, .h2 .nav-link:hover
   font-size: 1.25rem;
 }
 
-.bg-news {
-  background-color: #656565;
+
+.bg-glass {
+  background: white;
+  background: linear-gradient(
+    to left bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 0.6rem;
 }
 </style>
