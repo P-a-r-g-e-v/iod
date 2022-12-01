@@ -95,9 +95,12 @@
     <div class="container mt-md-2 pt-lg-3 pt-3 pb-2 d-flex justify-content-center">
       <div class="row">
        <div class="col-12 rainbow d-flex text-center">
-        <NuxtLink :to="loggedInUser ? '/user/me' : '/user/login'" class="btn btn-translucent-primary btn-hover-shadow btn-lg my-auto ">
+        <!-- <NuxtLink :to="loggedInUser ? '/user/me' : '/user/login'">
+          <button class="btn btn-translucent-primary btn-hover-shadow btn-lg my-auto">
           Join AIoD <i class="ci-arrow-right"></i>
-        </NuxtLink>
+        </button>
+        </NuxtLink> -->
+
        </div>
       </div>
     </div>
@@ -359,9 +362,11 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
+
 export default {
   name: 'JoinAIOD',
-
   data() {
     return {
       responsive_options: {
@@ -393,7 +398,9 @@ export default {
       },
     }
   },
-
+  computed: {
+    ...mapGetters(['loggedInUser']),
+  },
 //   methods: {
 //     switchAlt: {
 
