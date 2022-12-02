@@ -13,7 +13,7 @@
           <span class="nav-link active" data-filter="all"> All News </span>
         </li>
         <li
-          v-for="item in news_categories.data"
+          v-for="item in types.data"
           :key="item.id"
           class="nav-item mb-0"
         >
@@ -333,13 +333,13 @@ export default {
     return {
       msg: 'Vue.js & MixItUp example',
       mixer: null,
-      news_categories: [],
-      news: [],
+      types: [],
+      newsletters: [],
     }
   },
   created() {
-    this.getNews_Categories();
-    this.getNews();
+    this.getTypes();
+    this.getNewsletters();
   },
   mounted() {
     setTimeout(() => {
@@ -363,20 +363,20 @@ export default {
     }, 1000)
   },
   methods: {
-    async getNews_Categories() {
+    async getTypes() {
       try {
-        const results = await this.$strapi.find('news_categories', {
+        const results = await this.$strapi.find('types', {
           populate: ['*'],
         })
-        this.news_categories = results
+        this.types = results
       } catch (error) {}
     },
-    async getNews() {
+    async getNewsletters() {
       try {
-        const results = await this.$strapi.find('news', {
+        const results = await this.$strapi.find('newsletters', {
           populate: ['*'],
         })
-        this.news = results
+        this.newsletters = results
       } catch (error) {}
     },
   },

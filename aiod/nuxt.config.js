@@ -72,7 +72,7 @@ export default {
 
   strapi: {
     url: process.env.STRAPI_URL + "api" || 'http://localhost:1337/api',
-    entities: ['events', 'categories'],
+    entities: ['events', 'categories', 'newsletters', 'types'],
     key: 'test_token'
   },
 

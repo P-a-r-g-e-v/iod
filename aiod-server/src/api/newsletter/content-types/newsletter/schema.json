@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "news",
+  "collectionName": "newsletters",
   "info": {
-    "singularName": "new",
-    "pluralName": "news",
-    "displayName": "News",
+    "singularName": "newsletter",
+    "pluralName": "newsletters",
+    "displayName": "Newsletters",
     "description": ""
   },
   "options": {
@@ -18,11 +18,11 @@
     "Description": {
       "type": "richtext"
     },
-    "news_category": {
+    "types": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::news-category.news-category",
-      "inversedBy": "news"
+      "target": "api::type.type",
+      "inversedBy": "newsletters"
     }
   }
 }

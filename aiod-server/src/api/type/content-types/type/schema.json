@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "news_categories",
+  "collectionName": "types",
   "info": {
-    "singularName": "news-category",
-    "pluralName": "news-categories",
-    "displayName": "News Categories",
+    "singularName": "type",
+    "pluralName": "types",
+    "displayName": "Newsletter Types",
     "description": ""
   },
   "options": {
@@ -18,11 +18,11 @@
     "FilterKey": {
       "type": "string"
     },
-    "news": {
+    "newsletters": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::new.new",
-      "mappedBy": "news_category"
+      "target": "api::newsletter.newsletter",
+      "mappedBy": "types"
     }
   }
 }

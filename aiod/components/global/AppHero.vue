@@ -14,13 +14,16 @@
         }'
       :navContainer="'#pager'"
       mode="gallery"
-      controls='true'
-      mouseDrag='true'
-      arrowKeys='true'
-      controlsText="⬅➡"
+      :controlsText="'⬅➡'"
+      :controls='true'
+      :mouseDrag= 'true'
+      :arrowKeys= 'true'
     >
 
     <!--
+      controlsTContainer = "'.ci-arrow-left,' '.ci-arrow-right'"
+      prevButton='.ci-arrow-left'
+
       atributes fro autoplay
         ***
       autoplay='true'

@@ -158,10 +158,10 @@
             }
         }'
           :gutter="30"
-          controls="true"
-          mouseDrag="true"
-          arrowKeys="true"
-          controlsText="⬅➡"
+          :controls="true"
+          :mouseDrag="true"
+          :arrowKeys="true"
+          :controlsText="'⬅➡'"
           :responsive="responsive_options"
         >
           <div>
@@ -362,9 +362,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-
-
 export default {
   name: 'JoinAIOD',
   data() {
@@ -398,15 +395,6 @@ export default {
       },
     }
   },
-  computed: {
-    ...mapGetters(['loggedInUser']),
-  },
-//   methods: {
-//     switchAlt: {
-
-//   }
-// }
-
 }
 </script>
 
