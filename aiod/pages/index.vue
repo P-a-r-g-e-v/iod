@@ -435,10 +435,23 @@ export default {
 
 <style>
 @media (max-width: 480px) {
-  .container {
+  .body {
     height: 100%;
-    overflow-x: hidden;
+    width: auto!important;
+    overflow-x: hidden!important;
     overflow-y: scroll!important;
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse
+    {
+      background-color:black!important;
+    }
+  .navbar-collapse.show>.navbar {
+    background-color: #000!important;
   }
 }
 

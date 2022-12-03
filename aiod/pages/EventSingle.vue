@@ -9,10 +9,10 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb mb-lg-4 pb-md-3">
           <li class="breadcrumb-item">
-            <NuxtLink to="/">Homepage</NuxtLink>
+            <NuxtLink to="/" class="text-white">Homepage</NuxtLink>
           </li>
           <li class="breadcrumb-item">
-            <NuxtLink to="/eventspage">Events</NuxtLink>
+            <NuxtLink to="/eventspage" class="text-white">Events</NuxtLink>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             Modern Challenges

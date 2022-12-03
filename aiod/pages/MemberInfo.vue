@@ -1,6 +1,6 @@
 <template>
   <section style="background-image: url(assets/images/wrap-bg.svg)">
-    <div class="container py-lg-6 py-xl-6">
+    <div class="container py-lg-6 py-xl-6 pb-4">
       <h2 class="h1 text-center text-white">Member Information</h2>
       <div
         class="row g-0 bg-dark bg-repeat-0 bg-position-center border rounded-3 overflow-hidden"
@@ -12,7 +12,7 @@
         ></div>
         <div class="col-md-7 py-xl-5 px-4">
           <div class="py-5 mx-auto" style="max-width: 530px">
-            <div class="fs-xl text-light opacity-50 mb-2">
+            <div class="fs-xl text-light text-purple mb-2">
               Federation of Euro-Asian Stock Exchanges(FEAS)
             </div>
             <h2 class="h1 text-light mb-4">Courtney Alexander</h2>

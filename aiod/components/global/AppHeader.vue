@@ -26,7 +26,7 @@
           data-bs-target="#navbarCollapse1"
           aria-expanded="false"
         >
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
       </div>
       <nav id="navbarCollapse1" class="collapse navbar-collapse order-lg-2">
@@ -227,4 +227,39 @@ a:hover {
   rgba(0, 0, 0, .75) !important;
   border: .5px solid #6366f1;
 }
+
+/* ANIMATED RIGHT ARROW */
+/* .navbar-toggler.rarr.collapsed .icon-bar:nth-of-type(1) {
+	transform: translate3d(0,0,0) rotate(0deg);
+	transform-origin: right top;
+	width: 22px;
+}
+
+.navbar-toggler.rarr.collapsed .icon-bar:nth-of-type(2) {
+	transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggler.rarr.collapsed .icon-bar:nth-of-type(3) {
+	transform: translate3d(0,0,0) rotate(0deg);
+	transform-origin: right bottom;
+	width: 22px;
+}
+
+.navbar-toggler.rarr .icon-bar:nth-of-type(1) {
+	transform: translate3d(11px,6px,0) rotate(45deg);
+	transform-origin: right top;
+	width: 11px;
+}
+
+.navbar-toggler.rarr .icon-bar:nth-of-type(2) {
+	 transform: scale(0.75); ;
+}
+
+.navbar-toggler.rarr .icon-bar:nth-of-type(3) {
+	transform: translate3d(11px,-6px,0) rotate(-45deg);
+	transform-origin: right bottom;
+	width: 11px;
+} */
+
+/* END ANIMATED RIGHT ARROW */
 </style>

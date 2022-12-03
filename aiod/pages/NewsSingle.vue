@@ -7,11 +7,11 @@
           <!-- Breadcrumbs -->
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-lg-4 pb-md-3">
-              <li class="breadcrumb-item">
-                <NuxtLink to="/">Homepage</NuxtLink>
+              <li class="breadcrumb-item text-white">
+                <NuxtLink to="/" class="text-white">Homepage</NuxtLink>
               </li>
-              <li class="breadcrumb-item">
-                <NuxtLink to="/newspage">News</NuxtLink>
+              <li class="breadcrumb-item text-white">
+                <NuxtLink to="/newspage" class="text-white">News</NuxtLink>
               </li>
               <li class="breadcrumb-item active" aria-current="page">How to Build Determined Team</li>
             </ol>
@@ -38,15 +38,13 @@
             </ul>
             <div class="d-sm-block d-none ms-sm-4">
               <a
-                  href="https://www.facebook.com/ArmenianInstituteofDirectors"
-                  target="_blank"
+                  href="#"
                   class="btn-social ci-facebook-a"
                 >
                   <i class="ci-facebook"></i>
                 </a>
                 <a
-                  href="https://am.linkedin.com/company/armenian-institute-of-directors#:~:text=The%20AIoD%20is%20a%20non,and%20welfare%20of%20Armenian%20society."
-                  target="_blank"
+                  href="#"
                   class="btn-social ci-linkedin-a">
                   <i class="ci-linkedin"></i>
                 </a>

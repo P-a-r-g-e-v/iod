@@ -122,7 +122,6 @@
         <div class="mx-auto mb-md-5 mb-4 pb-2" style="max-width: 390px">
           <div class="switch">
             <input
-              v-on:click="switchAlt"
               class="switch-input visually-hidden"
               type="checkbox"
               id="switchAlt"
