@@ -7,14 +7,14 @@
       <NuxtLink class="navbar-brand order-lg-1 me-lg-5 ms-lg-5 pe-lg-2" to="/">
         <img
           style="filter: saturate(200%);"
-          src="/assets/images/last.png"
+          src="assets/images/last.png"
           alt="AIoD Logo"
           width="55"
         />
       </NuxtLink>
       <div class="d-flex align-items-center order-lg-3 me-lg-4">
         <NuxtLink class="d-flex navbar-tool topbar-link text-decoration-none text-nowrap" :to="loggedInUser ? '/user/me' : '/user/login'">
-          <img class="icon navbar-tool-icon" width="55" src="/assets/images/login.png" alt="">
+          <img class="icon navbar-tool-icon" width="55" src="assets/images/login.png" alt="">
           <div class="ms-2 ps-1">
             <h6 class="navbar-tool-title text-white">{{ loggedInUser ? loggedInUser.username : 'Sign in / up' }}</h6>
           </div>
@@ -108,7 +108,7 @@
                 >
               </li>
               <li><NuxtLink class="dropdown-item" to="/memberspage#join-us">Join AIoD</NuxtLink></li>
-              <li><a class="dropdown-item" href="">Opportunities</a></li>
+              <li><a class="dropdown-item" href="#">Opportunities</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -123,8 +123,8 @@
                 <NuxtLink class="dropdown-item" to="/newspage">AIoD News</NuxtLink>
               </li>
               <li><a class="dropdown-item" href="#">Industry News</a></li>
-              <li><a class="dropdown-item" href="">Blog</a></li>
-              <li><a class="dropdown-item" href="">Gallery</a></li>
+              <li><NuxtLink class="dropdown-item" to="/blogpage">Blog</NuxtLink></li>
+              <li><a class="dropdown-item" href="#">Gallery</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -141,7 +141,7 @@
                 >
               </li>
               <li>
-                <NuxtLink class="dropdown-item" to="/memberpage">Membership Payment Tool</NuxtLink>
+                <NuxtLink class="dropdown-item" to="#">Membership Payment Tool</NuxtLink>
               </li>
             </ul>
           </li>
@@ -171,6 +171,14 @@ export default {
 </script>
 
 <style scoped>
+@media (min-width:990px) {
+  .navbar-expand-lg .dropdown-menu {
+  background-color: rgba(12, 11, 11, 0.95) !important;
+  box-shadow: 0 0 10px
+  rgba(0, 0, 0, .75) !important;
+  border: .5px solid rgba(99, 102, 241, .4);
+}
+}
 
 .navbar-nav .nav-item:hover>.nav-link {
   color: #6366f1!important;
@@ -214,19 +222,15 @@ a:hover {
   z-index: 1030;
 }
 
+ .navbar-toggler-icon, .navbar-toggler-icon::before,  .navbar-toggler-icon::after {
+    background-color: #fff!important;
+}
 /* header {
   position: fixed!important;
   display: flex!important;
   transition: 0.6s;
 } */
 
-
-.navbar-expand-lg .dropdown-menu {
-  background-color: rgba(12, 11, 11, 0.95) !important;
-  box-shadow: 0 0 10px
-  rgba(0, 0, 0, .75) !important;
-  border: .5px solid #6366f1;
-}
 
 /* ANIMATED RIGHT ARROW */
 /* .navbar-toggler.rarr.collapsed .icon-bar:nth-of-type(1) {

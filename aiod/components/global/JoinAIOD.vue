@@ -95,11 +95,11 @@
     <div class="container mt-md-2 pt-lg-3 pt-3 pb-2 d-flex justify-content-center">
       <div class="row">
        <div class="col-12 rainbow d-flex text-center">
-        <!-- <NuxtLink :to="loggedInUser ? '/user/me' : '/user/login'">
-          <button class="btn btn-translucent-primary btn-hover-shadow btn-lg my-auto">
+        <NuxtLink class="mt-2" :to="loggedInUser ? '/user/me' : '/user/login'">
+          <a class="btn btn-translucent-primary btn-hover-shadow btn-lg my-auto">
           Join AIoD <i class="ci-arrow-right"></i>
-        </button>
-        </NuxtLink> -->
+        </a>
+        </NuxtLink>
 
        </div>
       </div>
@@ -459,9 +459,9 @@ body {
  .rainbow {
 	 position: relative;
 	 z-index: 0;
-	 width: 248px;
-	 height: 140px;
-	 border-radius: 10px;
+	 width: 15.5rem;
+	 height: 8.75rem;
+	 border-radius: 0.625rem;
 	 overflow: hidden;
 	 padding: 2rem;
 }

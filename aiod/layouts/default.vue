@@ -37,7 +37,16 @@ export default {
 </script>
 
 <style>
-
+@media (max-width: 480px) {
+  .body {
+    height: 100%;
+    width: auto!important;
+    overflow-x: hidden!important;
+    overflow-y: scroll!important;
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
+}
 
 html {
   scroll-behavior: smooth !important;

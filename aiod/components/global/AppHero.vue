@@ -180,10 +180,14 @@ html, body {
   }
 }
 
-.btn-arrow i {
-  position: relative;
-  transition: ease-out 0.12s;
+@media (max-width: 700px) {
+  .text-hero {
+    position: center;
+    font-size: 30px!important;
+    padding-top:30px!important;
+  }
 }
+
 
 .btn-arrow:hover i{
   transform: translateX(15px);
