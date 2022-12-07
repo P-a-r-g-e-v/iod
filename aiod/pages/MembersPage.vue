@@ -65,7 +65,7 @@
                   />
                 </div>
                 <span class="card-text text-center text-purple">FEAS</span>
-                <h5 class="card-title mb-1"><a href="/memberinfo" class="stretched-link member-link">Courtney Alexander</a></h5>
+                <h5 class="card-title mb-1"><NuxtLink to="/memberinfo" class="stretched-link member-link">Courtney Alexander</NuxtLink></h5>
                 <hr />
               </div>
             </div>

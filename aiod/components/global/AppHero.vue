@@ -129,7 +129,7 @@
               <button type="button" data-nav="2">03</button>
               <button type="button" data-nav="3">04</button>
               <NuxtLink
-                to="/memberspage#join-us"
+                to="/memberspage#benefits"
                 class="btn btn-arrow join-btn"
                 id="purple"
                 >Join us <i class="ci-arrow-right"></i>

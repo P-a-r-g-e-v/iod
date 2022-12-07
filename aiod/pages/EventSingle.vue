@@ -34,11 +34,7 @@
           mode="gallery"
           mouseDrag='true'
           arrowKeys='true'
-          controlsText="⬅➡"
-          autoplay='true'
-          autoplayHoverPause='true'
-          :autoplayButtonOutput='false'
-          autoplayTimeout='3500'
+          :controls='false'
         >
           <!-- Gallery item -->
           <div class="gallery">
@@ -135,7 +131,7 @@
             Traditional #governance elements, such as #transparency, ownership and organisational structure, have long been captured in Fitch’s rating criteria, but the agency believes that continued focus on qualitative governance #rating considerations remains important in a forward-looking rating framework. During this webinar, we will be looking at some high-profile governance failures at banks, reviewing rating impacts and lessons learned.
           </p>
         </div>
-        <div class="col-lg-5 offset-lg-1 col-md-6">
+        <div class="col-lg-5 offset-lg-1 col-md-6 pb-4">
           <div class="d-table w-100 p-sm-4 p-3 rounded-4 glass-dark shadow-purple shadow-sm">
             <div class="d-table-row">
               <h6 class="d-table-cell py-2 px-sm-4 px-2 text-uppercase text-white">

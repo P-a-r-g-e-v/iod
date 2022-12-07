@@ -9,9 +9,9 @@
             class="breadcrumb breadcrumb-alt breadcrumb-light justify-content-center mb-sm-4"
           >
             <li class="breadcrumb-item">
-              <a href="#">
+              <NuxtLink to="/">
                 <i class="ci-home"></i>
-              </a>
+              </NuxtLink>
             </li>
             <li class="breadcrumb-item active" aria-current="page">Blog</li>
           </ol>
@@ -85,7 +85,7 @@
                 <ul class="nav nav-muted mb-2">
                   <li class="nav-item me-2">
                     <a
-                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal text-white"
+                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal"
                       href="#"
                     >
                       SEO
@@ -94,7 +94,7 @@
                   </li>
                   <li class="nav-item me-2">
                     <a
-                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal text-white"
+                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal"
                       href="#"
                     >
                       <i class="ci-clock mt-n1 me-2 fs-base align-middle"></i>
@@ -104,7 +104,7 @@
                   </li>
                   <li class="nav-item me-2">
                     <a
-                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal text-white"
+                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal"
                       href="#"
                     >
                       <i class="ci-profile mt-n1 me-2 fs-base align-middle"></i>
@@ -146,7 +146,7 @@
                 <ul class="nav nav-muted mb-2">
                   <li class="nav-item me-2">
                     <a
-                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal text-white"
+                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal"
                       href="#"
                     >
                       Marketing
@@ -155,7 +155,7 @@
                   </li>
                   <li class="nav-item me-2">
                     <a
-                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal text-white"
+                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal"
                       href="#"
                     >
                       <i class="ci-clock mt-n1 me-2 fs-base align-middle"></i>
@@ -165,7 +165,7 @@
                   </li>
                   <li class="nav-item me-2">
                     <a
-                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal text-white"
+                      class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal"
                       href="#"
                     >
                       <i class="ci-profile mt-n1 me-2 fs-base align-middle"></i>
@@ -617,8 +617,8 @@
               class="offcanvas-lg offcanvas-center ps-lg-4 ps-xl-5"
               id="blog-sidebar"
             >
-              <div class="offcanvas-header align-items-center shadow mb-3">
-                <h5 class="h4 mb-0 text-dark">Sidebar</h5>
+              <div class="offcanvas-header align-items-center mb-3">
+                <h5 class="h4 mb-0 text-purple">Sidebar</h5>
                 <button
                   class="btn-close me-n1"
                   type="button"
@@ -795,44 +795,46 @@ export default {
   .sidebar-toggle {
     display: inline-flex;
   }
-}
 
-@media (max-width: 991.98px) {
   .offcanvas-lg.showing,
   .offcanvas-lg.show:not(.hiding) {
     transform: none;
   }
-}
 
-@media (max-width: 991.98px) {
   .offcanvas-lg.showing,
   .offcanvas-lg.hiding,
   .offcanvas-lg.show {
     visibility: visible;
   }
-}
 
-@media (max-width: 991.98px) {
   .offcanvas-lg.offcanvas-center {
     top: 0;
     right: 0;
     width: 22.5rem;
     transform: translateX(100%);
   }
-}
 
-@media (max-width: 991.98px) {
   span {
     color: #6366f1 !important;
   }
 
-  .text-white {
-    color: black !important;
+  span.badge {
+    color: white!important;
+  }
+
+  #blog-sidebar {
+    background-color: #000000;
+  }
+
+  .btn-close {
+    background-color: #6366f1 !important;
   }
 }
 
-span {
-  color: white;
+@media (min-width: 991.98px) {
+  span {
+    color: white!important;
+  }
 }
 
 .bg-success {
@@ -870,6 +872,10 @@ hr {
 }
 
 .page-item.active .page-link {
+  color: #6366f1 !important;
+}
+
+.widget .nav-link:hover {
   color: #6366f1 !important;
 }
 </style>

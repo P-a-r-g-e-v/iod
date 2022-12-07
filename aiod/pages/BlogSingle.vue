@@ -13,12 +13,12 @@
             class="breadcrumb breadcrumb-alt breadcrumb-light justify-content-center mb-sm-4"
           >
             <li class="breadcrumb-item">
-              <a href="#">
+              <NuxtLink to="/">
                 <i class="ci-home"></i>
-              </a>
+              </NuxtLink>
             </li>
             <li class="breadcrumb-item">
-              <a href="#">Blog</a>
+              <NuxtLink to="/blogpage">Blog</NuxtLink>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
               How to Increase Your ROI Through Scientific SEM?
@@ -190,8 +190,8 @@
               class="offcanvas-lg offcanvas-center ps-lg-4 ps-xl-5"
               id="blog-sidebar"
             >
-              <div class="offcanvas-header shadow mb-3">
-                <h5 class="h4 mb-0">Sidebar</h5>
+              <div class="offcanvas-header mb-3">
+                <h5 class="h4 mb-0 text-purple">Sidebar</h5>
                 <button
                   class="btn-close me-n1"
                   type="button"
@@ -205,23 +205,6 @@
                 data-simplebar
                 data-simplebar-auto-hide="true"
               >
-                <!-- Search -->
-                <form class="mb-lg-5 mb-4 pb-2">
-                  <div class="input-group">
-                    <input
-                      class="form-control pe-5 rounded"
-                      type="search"
-                      placeholder="Search the blog"
-                      required
-                    />
-                    <button
-                      class="btn btn-link position-absolute top-50 end-0 me-3 px-0 translate-middle-y zindex-5"
-                      type="submit"
-                    >
-                      <i class="ci-search"></i>
-                    </button>
-                  </div>
-                </form>
 
                 <!-- Widget: Author -->
                 <div class="widget mb-lg-5 mb-4 pb-2">
@@ -385,44 +368,54 @@ export default {
   .sidebar-toggle {
     display: inline-flex;
   }
-}
 
-@media (max-width: 991.98px) {
   .offcanvas-lg.showing,
   .offcanvas-lg.show:not(.hiding) {
     transform: none;
   }
-}
 
-@media (max-width: 991.98px) {
   .offcanvas-lg.showing,
   .offcanvas-lg.hiding,
   .offcanvas-lg.show {
     visibility: visible;
   }
-}
 
-@media (max-width: 991.98px) {
   .offcanvas-lg.offcanvas-center {
     top: 0;
     right: 0;
     width: 22.5rem;
     transform: translateX(100%);
   }
-}
 
-@media (max-width: 991.98px) {
   span {
     color: #6366f1 !important;
   }
 
-  .text-white {
-    color: black !important;
+  span.badge {
+    color: white!important;
+  }
+
+  #blog-sidebar {
+    background-color: #000000;
+  }
+
+  .btn-close {
+    background-color: #6366f1 !important;
+  }
+}
+
+@media (min-width: 991.98px) {
+  span {
+    color: white!important;
   }
 }
 
 span {
   color: white;
+}
+
+.btn-social:hover {
+  color: grey;
 }
 
 .bg-success {
@@ -434,7 +427,7 @@ span {
 }
 
 a:hover {
-  color: #6366f1 !important;
+  color: #6366f1;
 }
 
 .nav-link span:hover {
@@ -471,4 +464,11 @@ hr {
   color:#6366f1!important;
 }
 
+a .btn-social:hover {
+  color: grey;
+}
+
+.widget .nav-link:hover {
+  color: #6366f1 !important;
+}
 </style>

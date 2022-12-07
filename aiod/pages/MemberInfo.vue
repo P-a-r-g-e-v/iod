@@ -1,7 +1,7 @@
 <template>
   <section style="background-image: url(assets/images/wrap-bg.svg)">
     <div class="container py-lg-6 py-xl-6 pb-4">
-      <h2 class="h1 text-center text-white">Member Information</h2>
+      <h2 class="h1 text-center text-white pt-6">Member Information</h2>
       <div
         class="row g-0 bg-dark bg-repeat-0 bg-position-center border rounded-3 overflow-hidden"
         style="background-image: url(assets/images/member-info.svg)"
